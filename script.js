@@ -30,6 +30,12 @@ document.getElementById("searchBtn").addEventListener("click", () => {
   if (term) alert(`Buscando: ${term}`);
 });
 
-document.getElementById("playDemo").addEventListener("click", () => {
-  alert("Aquí puedes colocar tu video MP4 promocional. Más abajo te explico cómo hacerlo.");
+// La página PS5 reutiliza el carrito y el menú de navegación.
+document.querySelectorAll(".add-cart").forEach(button => {
+  button.addEventListener("click", () => {
+    const product = button.dataset.product || "Producto";
+    toast.textContent = product + " agregado al carrito 🎮";
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 1800);
+  });
 });
