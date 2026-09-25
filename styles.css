@@ -120,3 +120,39 @@ footer{border-top:1px solid var(--line);padding:50px 7% 20px;display:grid;grid-t
 @media(max-width:850px){.ps5-hero,.ps5-info,.ps5-highlight{grid-template-columns:1fr}.ps5-console-art{height:350px}.ps5-benefits{grid-template-columns:1fr 1fr}.ps5-games-grid{grid-template-columns:1fr 1fr}.ps5-offer{margin:30px 5%;flex-direction:column;align-items:flex-start}}
 @media(max-width:520px){.ps5-benefits,.ps5-games-grid{grid-template-columns:1fr}.ps5-hero{padding:55px 6%}.ps5-console{width:180px;height:290px}.ps5-spec-card strong{font-size:100px}.ps5-highlight{margin:0 5% 50px}}
 
+
+
+/* IMAGENES Y PRECIOS - VERSION ESTABLE */
+.product-photo-wrap{min-height:380px;padding:25px;border-radius:18px;border:1px solid var(--line);overflow:hidden;background:radial-gradient(circle,rgba(0,125,255,.18),transparent 65%)}
+.product-photo{width:100%;height:100%;max-height:340px;display:block;object-fit:contain;object-position:center;filter:drop-shadow(0 18px 24px rgba(0,0,0,.5))}
+.image-game{height:205px!important;padding:0!important;background:#050a12!important;position:relative}
+.image-game img{width:100%;height:100%;display:block;object-fit:contain;object-position:center;background:#050a12;transition:transform .3s ease}
+.image-game:hover img{transform:scale(1.035)}
+.image-game>span{position:absolute;left:10px;bottom:10px;z-index:3;padding:5px 8px;border-radius:5px;background:rgba(0,0,0,.72);font:700 10px Orbitron,sans-serif;color:#fff;letter-spacing:.5px}
+.price-block{display:flex;flex-direction:column;gap:4px;margin:18px 0 22px}
+.price-block span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.price-block strong{font:800 clamp(22px,3vw,30px) Orbitron,sans-serif;color:#00c3ff}
+.game-card .price,.ps5-game-card .price{display:block;margin-top:9px;font:700 16px Orbitron,sans-serif;color:#00c3ff}
+.ps5-main-photo{width:min(100%,390px);height:520px;object-fit:contain;object-position:center;display:block;border-radius:18px;filter:drop-shadow(0 25px 35px rgba(0,0,0,.6))}
+.ps5-console-art{min-height:520px}
+.ps5-spec-card{overflow:hidden;position:relative}
+.ps5-spec-card img{width:100%;height:250px;object-fit:contain;object-position:center;display:block;opacity:.95;filter:drop-shadow(0 12px 20px rgba(0,0,0,.55))}
+.ps5-spec-card>span,.ps5-spec-card>strong,.ps5-spec-card>small{position:relative;z-index:2}
+.ps5-spec-card>strong{font-size:70px}
+.ps5-game-art{height:210px!important;padding:0!important;overflow:hidden;position:relative;background:#050a12!important}
+.ps5-game-art img{width:100%;height:100%;display:block;object-fit:contain;object-position:center;background:#050a12;transition:transform .3s ease}
+.ps5-game-art:hover img{transform:scale(1.035)}
+.ps5-game-art>span{position:absolute;left:10px;bottom:10px;z-index:3;padding:5px 8px;border-radius:5px;background:rgba(0,0,0,.72);font:700 10px Orbitron,sans-serif;color:#fff}
+.dualsense-visual{font-size:70px}
+.spiderman-price{margin-top:18px}
+@media(max-width:850px){
+  .product-photo-wrap{min-height:300px}
+  .ps5-main-photo{height:390px}
+  .ps5-console-art{min-height:390px}
+}
+@media(max-width:520px){
+  .product-photo-wrap{min-height:250px;padding:15px}
+  .ps5-main-photo{height:320px}
+  .ps5-console-art{min-height:330px}
+  .ps5-spec-card img{height:210px}
+}
