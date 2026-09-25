@@ -153,7 +153,9 @@ footer{border-top:1px solid var(--line);padding:50px 7% 20px;display:grid;grid-t
 }
 
 .image-game img {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center;
   transition: transform .35s ease;
 }
 
@@ -186,3 +188,8 @@ footer{border-top:1px solid var(--line);padding:50px 7% 20px;display:grid;grid-t
     max-height: 180px;
   }
 }
+
+
+/* Portadas verticales para que las carátulas se vean completas y proporcionadas. */
+.game-art.image-game { aspect-ratio: 2 / 3; }
+.game-art.image-game img { object-fit: cover; object-position: center; }
